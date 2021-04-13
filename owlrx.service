@@ -1,0 +1,16 @@
+[Unit]
+Description = Owl Power Receiever Service
+After = network.target # Assuming you want to start after network interfaces are made available
+ 
+[Service]
+Type = simple
+ExecStart = python /home/pi/owl/owlrx.py
+User = pi # User to run the script as
+Group = pi # Group to run the script as
+Restart = on-failure # Restart when there are errors
+#SyslogIdentifier = <Name of logs for the service>
+RestartSec = 5
+TimeoutStartSec = infinity
+ 
+[Install]
+WantedBy = multi-user.target # Make it accessible to other users
