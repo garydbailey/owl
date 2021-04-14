@@ -1,0 +1,5 @@
+[USERINFO]
+ADAFRUIT_IO_USERNAME = '<username>'
+ADAFRUIT_IO_KEY = '<adafuit.io key>'
+[FEEDINFO]
+ADAFRUIT_FEED = '<adafruit feed name>'
